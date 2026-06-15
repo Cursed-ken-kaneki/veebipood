@@ -44,7 +44,7 @@ router.post("/", (req, res) => {
     items: orderItems,
     total: Math.round(total * 100) / 100,
     // BUG: staatus peaks olema "vastu võetud" mitte "pending"
-    status: "pending",
+    status: "vastu võetud",
     createdAt: new Date().toISOString(),
   };
 
